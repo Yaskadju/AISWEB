@@ -1,15 +1,7 @@
 const request = require("request");
 const cheerio = require("cheerio");
-const readline = require("readline");
 
-// const rl = readline.createInterface({
-//   input: process.stdin,
-//   output: process.stdout
-// });
-
-// rl.question("Por favor, entre com a sigla ICAO que você deseja procurar", (ICAO))
-
-const ICAO = "SBMT";
+let ICAO = process.argv[2];
 
 request(
   "https://www.aisweb.aer.mil.br/?i=aerodromos&codigo=" + ICAO,
@@ -34,12 +26,6 @@ request(
         .replace(/\s+/g, " ");
 
       const cartas = [];
-
-      // const linhaDasCartas = $(
-      //   "body > div > div > div > div > div:nth-child(2) >  ul  "
-      // )
-      //   .text()
-      //   .replace(/\s+/g, " ");
 
       $("body > div > div > div > div > div:nth-child(2) >  ul > li ").each(
         function(i, e) {
