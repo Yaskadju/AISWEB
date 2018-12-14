@@ -8,8 +8,8 @@ O propósito deste programa é que o usuário insira, em um terminal de comando,
 
 ## Como rodar o programa
 
-1. Navegue até o diretório da pasta
+1. Baixe o arquivo ou clone o repositório utilizando 'git clone https://github.com/Yaskadju/AISWEB'
 
-2. Com o Node instalado, instale os pacotes utilizando 'npm install' ou 'npm install cheerio request':
+2. Navegue até o diretório da pasta AISWEB
 
-3. Digite o comando 'node scrape ICAO', onde ICAO corresponde ao código ICAO que você deseja procurar.
+3. No terminal e com o Node instalado, digite o comando 'node scrape ICAO', onde ICAO corresponde ao código ICAO que você deseja procurar.

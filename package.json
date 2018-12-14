@@ -1,17 +1,24 @@
 {
-  "name": "questionTwo",
+  "name": "AISWEB",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "O propósito deste programa é que o usuário insira, em um terminal de comando, o código ICAO para qualquer aeródromo, e imprima na tela:",
+  "main": "scrape.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yaskadju/AISWEB.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yaskadju/AISWEB/issues"
+  },
+  "homepage": "https://github.com/Yaskadju/AISWEB#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
-    "readline-sync": "^1.4.9",
     "request": "^2.88.0"
   }
 }

@@ -14,21 +14,21 @@ request(
         .replace(/\s+/g, " ");
 
       const nascer = $(
-        "body > div > div > div > div > div > div > div > h4 > sunrise "
-      )
+          "body > div > div > div > div > div > div > div > h4 > sunrise "
+        )
         .text()
         .replace(/\s+/g, " ");
 
       const por = $(
-        "body > div > div > div > div > div > div > div > h4 > sunset "
-      )
+          "body > div > div > div > div > div > div > div > h4 > sunset "
+        )
         .text()
         .replace(/\s+/g, " ");
 
       const cartas = [];
 
       $("body > div > div > div > div > div:nth-child(2) >  ul > li ").each(
-        function(i, e) {
+        function (i, e) {
           cartas[i] = $(this)
             .text()
             .replace(/\s+/g, " ");
